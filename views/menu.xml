@@ -1,0 +1,12 @@
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+    <menuitem name="Hotel JH" id="hotelitic.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Habitacions" id="hotelitic.menu_1" parent="hotelitic.menu_root"/>
+    <menuitem name="Habitacions" id="hotelitic.menu_1_list" parent="hotelitic.menu_1"
+              action="hotelitic.action_room_window"/>
+
+  </data>
+</odoo>

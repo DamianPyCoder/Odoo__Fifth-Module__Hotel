@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hotelitic_room,hotelitic.room,model_hotelitic_room,base.group_user,1,1,1,1
+access_hotelitic_client,hotelitic.client,model_hotelitic_client,base.group_user,1,1,1,1

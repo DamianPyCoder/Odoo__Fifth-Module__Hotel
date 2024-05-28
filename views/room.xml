@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="hotelitic.room_list">
+      <field name="name">hotelitic room list</field>
+      <field name="model">hotelitic.room</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="capacity"/>
+          <field name="hasTV"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hotelitic.room_form">
+      <field name="name">hotelitic room form</field>
+      <field name="model">hotelitic.room</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <h1>
+              <field name="name"/>
+            </h1>
+            <group>
+              <field name="capacity"/>
+              <field name="hasTV"/>
+              <field name="floor"/>
+            </group>
+            <notebook>
+              <page string='Clients'>
+                <field name="client_ids"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="hotelitic.action_room_window">
+      <field name="name">Habitacions</field>
+      <field name="res_model">hotelitic.room</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+  </data>
+</odoo>
